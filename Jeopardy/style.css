@@ -36,7 +36,10 @@ nav {
 .tile {
     border: 1px solid black;
     text-align: center;
+}
 
+.game:hover {
+    border-color: yellow;
 }
 
 .qDisplay {
@@ -50,4 +53,8 @@ nav {
     flex-direction: column;
     justify-content: space-between;
     align-content: center;
+}
+
+#qDisplay {
+    display: hidden;
 }

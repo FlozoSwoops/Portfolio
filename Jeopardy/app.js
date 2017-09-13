@@ -37,7 +37,8 @@ let jqueryQuestions = {
 //create click funtionality 
 const $one = $('.one');
 $('.one').click (function () {
-    console.log(catOneQuestions.hundredDollarQ);
+    alert(catOneQuestions.hundredDollarQ);
+    
 
 
 });
