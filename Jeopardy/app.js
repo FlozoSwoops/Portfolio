@@ -1,22 +1,13 @@
 $(function(){
     alert("Everything is ready, let's do this");
 });
-let catOneQuestions = {
+let catOne = {
     Catagory: "Javascript",
-    hundredDollarQ: "Let type = [2,3,4] is an example of?",
-    twoHundredDollarQ: "Truthy and falsy are examples of this type.",
-    threeHundredDollarQ: "This company created Javascript?",
-    fourHundredDollarQ: "Javascript was created in a year",
-    fiveHundredDollarQ: "Let type = {} is an example of what?",
+    questions: ["Let type = [2,3,4] is an example of?","Truthy and falsy are examples of this type.", "This company created Javascript?", "Javascript was created in a year", "Let type = {} is an example of what?"],
+    answers: ["javascript", "array", "boolean", "netscape", "false", "empty object"]
 }
 
-let catOneAnswers = {
-    Catagory: "Javascript",
-    hundredDollarA: "Array",
-    twoHundredDollarA: "Boolean",
-    threeHundredDollarA: "Netscape",
-    fourHundredDollarA: "False",
-    fiveHundredDollarA: "Empty Object?",
+
 }
 
 // let htmlQuestions = {
@@ -36,7 +27,7 @@ let catOneAnswers = {
 //creating empty array to push question into
 const $qDisplay = $('#qDisplay');
 const $visible = function() {
-    $qDisplay.css('display','fit');
+    $qDisplay.css('display','');
 }
 const $invisible = function() { 
     $qDisplay.css('display','none');
@@ -48,9 +39,8 @@ const emptyArray = []
 
 //create click funtionality 
 const $one = $('.one');
-$('.one').click (function () {
-    $visible();
-});
+$one.on('click'(function () {
+  for(i=0, i < catOne.questions)
 
 const $two = $('.two');
 $two.click (function () {

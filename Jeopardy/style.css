@@ -40,6 +40,7 @@ nav {
 
 .game:hover {
     border-color: yellow;
+    border-width: 3px
 }
 
 #qDisplay {
