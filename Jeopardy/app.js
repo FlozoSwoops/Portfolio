@@ -28,24 +28,34 @@ let catOneAnswers = {
 //     fiveHundredDollarQ: 
 // }
 
-let cssQuestions = {
-    }
+// let cssQuestions = {
+//     }
 
-let jqueryQuestions = {
-    }
+// let jqueryQuestions = {
+//     }
+//creating empty array to push question into
+const $qDisplay = $('#qDisplay');
+const $visible = function() {
+    $qDisplay.css('display','fit');
+}
+const $invisible = function() { 
+    $qDisplay.css('display','none');
+}
+
+$invisible()
+
+const emptyArray = []
 
 //create click funtionality 
 const $one = $('.one');
 $('.one').click (function () {
-    alert(catOneQuestions.hundredDollarQ);
-    
-
-
+    $visible();
 });
 
 const $two = $('.two');
 $two.click (function () {
     alert("cat two question selected");
+    $('qDisplay').css('display', 'visible')
 });
 
 const $three = $('.three');
@@ -62,8 +72,10 @@ const $five = $('.five');
 $five.click (function () {
     alert("cat five question selected");
 });
-//pulls question from coresponding object
+//pulls question from  object
 
+//unhides qDisplay
+//display question in center
 //slide in screen question on a form
 
 //if type in the correct answer given message of correct

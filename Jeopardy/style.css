@@ -42,10 +42,11 @@ nav {
     border-color: yellow;
 }
 
-.qDisplay {
+#qDisplay {
     background-color: blue;
     height: 1400px;
     width: 1500px;
+    display:;
 }
 
 .gameboard {
@@ -55,6 +56,3 @@ nav {
     align-content: center;
 }
 
-#qDisplay {
-    display: hidden;
-}
