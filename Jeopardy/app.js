@@ -3,12 +3,12 @@ $(function(){
 });
 let catOne = {
     Catagory: "Javascript",
-    questions: ["Let type = [2,3,4] is an example of?","Truthy and falsy are examples of this type.", "This company created Javascript?", "Javascript was created in a year", "Let type = {} is an example of what?"],
-    answers: ["javascript", "array", "boolean", "netscape", "false", "empty object"]
+    questions: ["Let type = [2,3,4] is an example of?","Truthy and falsy are examples of what data type.", "This company created Javascript?", "Javascript was created in a year", "Let type = {} is an example of what?"],
+    answers: ["array", "boolean", "netscape", "false", "empty object"]
 }
 
 
-}
+
 
 // let htmlQuestions = {
 //     Catagory:
@@ -37,10 +37,23 @@ $invisible()
 
 const emptyArray = []
 
+
+
+
 //create click funtionality 
 const $one = $('.one');
-$one.on('click'(function () {
-  for(i=0, i < catOne.questions)
+$one.click (function () {
+  alert (catOne.questions[0]);
+  let getAnswer = window.prompt("Enter Answer")
+    if (getAnswer === catOne.answers[0]) {
+      alert ('correct')
+    }
+    else {
+        alert('incorrect')
+    }
+    catOne.questions.splice(0,1)
+    catOne.answers.splice(0,1)
+    });
 
 const $two = $('.two');
 $two.click (function () {
