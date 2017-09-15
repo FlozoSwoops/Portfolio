@@ -18,6 +18,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    color: yellow;
 }
 
 .catagory {

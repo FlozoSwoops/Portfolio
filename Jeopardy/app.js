@@ -40,7 +40,13 @@ let catFive = {
     score: [100, 200, 300, 400, 500]
 }
 const $qDisplay = $('#qDisplay');
+
+ //giving each class a point value
 let value = [100, 200, 300, 400, 500]
+
+for (i=0; i < value.length; i++) {
+    $('.1')
+}
 
 // Calculate Score
 const $playerOneScore = $('#playerOneScore');
