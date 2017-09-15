@@ -1,41 +1,52 @@
 body {
     background-color: rgba(100, 100, 100, 1); 
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-nav {
     
+}
+
+nav {
 }
 
 #wholeBoard{
     background-color: rgba(0, 0, 255, 0.8);
     border: 5px solid black;
     color: yellow;
-    size: 45px; 
     border-spacing: 0;
     margin:0 auto;
     height: 700px;
     width: 1100px;
-    
 }
+
 .topOfBoard {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-   
 }
 
 .catagory {
     background-color: blue;    
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-
+    
 }
+
 .tile {
+    display: flex;
+    flex-direction: row;
     border: 1px solid black;
     text-align: center;
+    font-size: 20px; 
+    font-family: 'Arial', sans-serif;
+    width: 215px;
+    height: 100px;
+}
+
+button {
+    background-color: blue;
+    color: yellow;
+    height: 100px;
+    width: 215px;
+}
+
+.btn-group {
 }
 
 .game:hover {
@@ -47,13 +58,10 @@ nav {
     background-color: blue;
     height: 1400px;
     width: 1500px;
-    display:;
+   
 }
 
-.gameboard {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-content: center;
+
+#gameboard {
 }
 

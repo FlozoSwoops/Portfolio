@@ -1,44 +1,60 @@
 $(function(){
-    alert("Everything is ready, let's do this");
+    let username = prompt('Enter Username');
 });
 let catOne = {
     Catagory: "Javascript",
     questions: ["Let type = [2,3,4] is an example of?","Truthy and falsy are examples of what data type.", "This company created Javascript?", "Javascript was created in a year", "Let type = {} is an example of what?"],
-    answers: ["array", "boolean", "netscape", "false", "empty object"]
+    answers: ["array", "boolean", "netscape", "false", "empty object"],
+    score: [100, 200, 300, 400, 500]
 }
 
 
 
 
-// let htmlQuestions = {
-//     Catagory:
-//     hundredDollarQ: 
-//     twoHundredDollarQ: 
-//     threeHundredDollarQ: 
-//     fourHundredDollarQ: 
-//     fiveHundredDollarQ: 
-// }
+ let catTwo = {
+     Catagory: "html",
+     questions: ["Which tag allows you to create a button?", "Inline styling is a good way to add changes to elements.", "The default display for a span is _____?","Prompts require user input.","By default which h tag has the largest font?"],
+     answers: ["button", "False", "inline", "True","h1" ]
+     
+ }
 
-// let cssQuestions = {
-//     }
+let catThree = {
+    catagory: "CSS",
+    questions: ["A . before a selector indicates?", "In order to activate flexbox, display must be set to what?"],
+    answers: ["class", "flex", ],
+    score: [100, 200, 300, 400, 500]
+    }
 
-// let jqueryQuestions = {
-//     }
+let catFour = {
+    catagory: "Jquery",
+    questions: [],
+    answers: [],
+    score: [100, 200, 300, 400, 500]
+     }
+
+let catFive = {
+    catagory: "",
+    questions: [],
+    answers: [],
+    score: [100, 200, 300, 400, 500]
+}
 //creating empty array to push question into
 const $qDisplay = $('#qDisplay');
-const $visible = function() {
-    $qDisplay.css('display','');
-}
-const $invisible = function() { 
-    $qDisplay.css('display','none');
-}
-
-$invisible()
 
 const emptyArray = []
 
+const $playerOne = $('#playerOne');
+let playerScore = 000;
+$playerOne.append('<script> playerOne</script>')
+// Calculate Score
+function addScore() {
+   playerScore = pointValue + playerScore;
+};
 
-
+function subtractScore() {
+    PlayerScore = playerOne - playerScore
+};
+$playerOne.html(playerScore)
 
 //create click funtionality 
 const $one = $('.one');
@@ -47,12 +63,15 @@ $one.click (function () {
   let getAnswer = window.prompt("Enter Answer")
     if (getAnswer === catOne.answers[0]) {
       alert ('correct')
+      addScore()
     }
     else {
         alert('incorrect')
+        subtractScore()
     }
     catOne.questions.splice(0,1)
     catOne.answers.splice(0,1)
+    
     });
 
 const $two = $('.two');

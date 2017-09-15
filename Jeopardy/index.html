@@ -7,85 +7,85 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Jeopardy</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ"
+        crossorigin="anonymous">
+</head>
 
 <body>
     <nav class="nav-wrapper">
-        <ul  class="right hide-on-med-and-down">
-            <li>Username</li>
+        <ul>
+            <li id="username">Username</li>
             <li>Logout</li>
         </ul>
     </nav>
 
     <div id="qDisplay hide">
-            
+
     </div>
 
-    <table id="wholeBoard">
-
-        <section class="topOfBoard">
-            <span>
-                <h2>Player 1</h2>
-                <h3 id="playerOne">000</h3>
-            </span>
-            <h1>Jeopardy</h1>
-            <span>
-                <h2>Player 2</h2>
-                <h3 id="playerTwo">000</h3>
-        </section>
 
 
-        <main class="catagory">
-            <tr>
-            <td class="tile">Cat 1</td>
-            <td class="tile">Cat 2</td>
-            <td class="tile">Cat 3</td>
-            <td class="tile">Cat 4</td>
-            <td class="tile">Cat 5</td>
-            </tr>
-        </main>
+    <section class="topOfBoard">
+        <span>
+            <h2>Player 1</h2>
+            <h3><label id="playerOne">000</label></h3>
+        </span>
+        <h1>Jeopardy</h1>
+        <span>
+            <h2>Player 2</h2>
+            <h3 id="playerTwo">000</h3>
+        </span>
+    </section>
 
+    <main id="wholeBoard">
         <hr>
-
-        <main class="gameBoard">
-            <tr>
-                <td pointValue=100 class="game tile one">100</td>
-                <td pointValue=100 class="game tile two">100</td>
-                <td pointValue=100 class="game tile three">100</td>
-                <td pointValue=100 class="game tile four">100</td>
-                <td pointValue=100 class="game tile five">100</td>
-            </tr>
-            <tr>
-                <td pointValue=200 class="game tile one">200</td>
-                <td pointValue=200 class="game tile two">200</td>
-                <td pointValue=200 class="game tile three">200</td>
-                <td pointValue=200 class="game tile four">200</td>
-                <td pointValue=200 class="game tile five">200</td>
-            </tr>
-            <tr>
-                <td class="game tile one">300</td>
-                <td class="game tile two">300</td>
-                <td class="game tile three">300</td>
-                <td class="game tile four">300</td>
-                <td class="game tile five">300</td>
-            </tr>
-            <tr>
-                <td class="game tile one">400</td>
-                <td class="game tile two">400</td>
-                <td class="game tile three">400</td>
-                <td class="game tile four">400</td>
-                <td class="game tile five">400</td>
-            </tr>
-            <tr>
-                <td class="game tile one">500</td>
-                <td class="game tile two">500</td>
-                <td class="game tile three">500</td>
-                <td class="game tile four">500</td>
-                <td class="game tile five">500</td>
-            </tr>
-
-        </main>
+                <div class="container" id= "gameboard">
+                        <div class="row">
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile ">Javascript</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile ">HTML</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile ">css</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile ">jQuery</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile ">Skydiving</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile one">100</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile two">100</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile three">100</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile four">100</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile five">100</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile one">200</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile two">200</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile three">200</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile four">200</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile five">200</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile one">300</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile two">300</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile three">300</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile four">300</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile five">300</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile one">400</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile two">400</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile three">400</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile four">400</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile five">400</button>
+                        </div>
+                        <div class="row">
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile one">500</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile two">500</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile three">500</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile four">500</button>
+                            <button type="button" class="btn btn-primary btn-lg col catagory tile five">500</button>
+                        </div>
+                        <div class="row">
+                                <button type="button" class="btn btn-primary btn-lg btn-block">Final Jeapardy</button>
+                        </div>
+                        </div>
 
     </table>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
