@@ -42,17 +42,17 @@ let catFive = {
 const $qDisplay = $('#qDisplay');
 
 const emptyArray = []
-
+// Calculate Score
 const $playerOne = $('#playerOne');
 let playerScore = 000;
 $playerOne.append('<script> playerOne</script>')
-// Calculate Score
+
 function addScore() {
-   playerScore = pointValue + playerScore;
+   playerScore = catOne.score[0] + playerScore;
 };
 
 function subtractScore() {
-    PlayerScore = playerOne - playerScore
+    playerScore = playerScore - catOne.score
 };
 $playerOne.html(playerScore)
 

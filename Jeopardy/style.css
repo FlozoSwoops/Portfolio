@@ -1,9 +1,7 @@
 body {
     background-color: rgba(100, 100, 100, 1); 
+    background-image: url("http://i0.kym-cdn.com/photos/images/newsfeed/001/078/032/183.jpg")
     
-}
-
-nav {
 }
 
 #wholeBoard{
@@ -61,7 +59,4 @@ button {
    
 }
 
-
-#gameboard {
-}
 
