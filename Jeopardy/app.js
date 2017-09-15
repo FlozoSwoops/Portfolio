@@ -40,22 +40,21 @@ let catFive = {
     score: [100, 200, 300, 400, 500]
 }
 const $qDisplay = $('#qDisplay');
+let value = [100, 200, 300, 400, 500]
 
 // Calculate Score
-const $playerOne = $('#playerOne');
+const $playerOneScore = $('#playerOneScore');
 let playerScore = 0;
-$playerOne.append('<script> playerOne</script>')
 
 function addScore() {
-   $('.playerOne').html(score);
-   playerScore = catOne.score[0] + playerScore
-   score += 0;
+    playerOneScore = catOne.score[0] + playerScore
+    $playerOneScore.text(playerOneScore);
 }; 
 
 function subtractScore() {
     playerScore = playerScore - catOne.score
 };
-$playerOne.append(playerScore)
+$playerOneScore.append(playerScore)
 
 //create click funtionality 
 const $one = $('.one');
@@ -64,7 +63,7 @@ $one.click (function () {
   let getAnswer = window.prompt("Enter Answer")
     if (getAnswer === catOne.answers[0]) {
       alert ('correct')
-      score += 0;
+      addScore();
     }
     else {
         alert('incorrect')
@@ -72,7 +71,7 @@ $one.click (function () {
     }
     catOne.questions.splice(0,1)
     catOne.answers.splice(0,1)
-    
+    catOne.score.splice(0,1)
     });
 
 const $two = $('.two');
