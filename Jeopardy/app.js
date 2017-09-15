@@ -1,5 +1,6 @@
 $(function(){
     let username = prompt('Enter Username');
+    $('#username').append(username)
 });
 let catOne = {
     Catagory: "Javascript",
@@ -38,18 +39,18 @@ let catFive = {
     answers: [],
     score: [100, 200, 300, 400, 500]
 }
-//creating empty array to push question into
 const $qDisplay = $('#qDisplay');
 
-const emptyArray = []
 // Calculate Score
 const $playerOne = $('#playerOne');
-let playerScore = 000;
+let playerScore = 0;
 $playerOne.append('<script> playerOne</script>')
 
 function addScore() {
-   playerScore = catOne.score[0] + playerScore;
-};
+   $('.playerOne').html(score);
+   playerScore = catOne.score[0] + playerScore
+   score += 0;
+}; 
 
 function subtractScore() {
     playerScore = playerScore - catOne.score
@@ -63,7 +64,7 @@ $one.click (function () {
   let getAnswer = window.prompt("Enter Answer")
     if (getAnswer === catOne.answers[0]) {
       alert ('correct')
-      addScore()
+      score += 0;
     }
     else {
         alert('incorrect')

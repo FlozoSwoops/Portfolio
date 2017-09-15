@@ -1,7 +1,7 @@
 body {
     background-color: rgba(100, 100, 100, 1); 
-    background-image: url("http://i0.kym-cdn.com/photos/images/newsfeed/001/078/032/183.jpg")
-    
+    background-image: url("http://vignette1.wikia.nocookie.net/gameshows/images/a/a6/Jeopardy_game_board.JPG/revision/latest?cb=20131230022134");
+    background-size: 100%;
 }
 
 #wholeBoard{
@@ -23,6 +23,8 @@ body {
 .catagory {
     background-color: blue;    
     display: flex;
+    background-image: url("http://i0.kym-cdn.com/photos/images/newsfeed/001/078/032/183.jpg");
+    background-size: 100%;
     
 }
 
@@ -44,7 +46,7 @@ button {
     width: 215px;
 }
 
-.btn-group {
+.question {
 }
 
 .game:hover {
