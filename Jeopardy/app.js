@@ -55,7 +55,7 @@ function addScore() {
 function subtractScore() {
     playerScore = playerScore - catOne.score
 };
-$playerOne.html(playerScore)
+$playerOne.append(playerScore)
 
 //create click funtionality 
 const $one = $('.one');
