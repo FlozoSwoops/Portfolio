@@ -1,13 +1,11 @@
 body {
-    background-color: rgba(100, 100, 100, 1); 
-    background-image: url("http://vignette1.wikia.nocookie.net/gameshows/images/a/a6/Jeopardy_game_board.JPG/revision/latest?cb=20131230022134");
-    background-size: 100%;
+    background-color: #b0bec5 
+    
 }
 
 #wholeBoard{
-    background-color: rgba(0, 0, 255, 0.8);
     border: 5px solid black;
-    color: yellow;
+    color:;
     border-spacing: 0;
     margin:0 auto;
     height: 700px;
@@ -22,10 +20,9 @@ body {
 }
 
 .catagory {
-    background-color: blue;    
+    background-color:rgba(0, 0, 255, 0.5);    
     display: flex;
-    background-image: url("http://i0.kym-cdn.com/photos/images/newsfeed/001/078/032/183.jpg");
-    background-size: 100%;
+    background-image: url("");
     
 }
 
